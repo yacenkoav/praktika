@@ -1,0 +1,39 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[T2A]{fontenc}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{tikz}
+\usepackage[european,cuteinductors,smartlabels]{circuitikz}
+\usepackage{siunitx}
+\title{Практическая работа №6}
+\author{Яценко А.В.}
+\date{7 декабря 2018}
+\begin{document}
+\maketitle
+\begin{tikzpicture}
+\draw (0,0) to [C,l={C},*-*] (0,11);
+\draw (0,11) to [short,-*] (8,11);
+\draw (2,11) to [Tnpn,mirror] (2,7);
+\draw (2,7) to [Tnpn,mirror,-*] (2,0);
+\draw (5,11) to [Tnpn,mirror] (5,7);
+\draw (5,7) to [Tnpn,mirror,-*] (5,0);
+\draw (8,11) to [Tnpn,mirror] (8,7);
+\draw (8,7) to [Tnpn,mirror,-*] (8,0);
+\draw (0,0) -- (8,0);
+\draw (2,7) to [short,*-] (8,7);
+\draw (5,6) to [short,*-] (8,6);
+\draw (8,5) to [short,*-] (8,5);
+\draw (8,7) to [L,l={L},-*] (11,7);
+\draw (8,6) to [L,-*] (11,6);
+\draw (8,5) to [L,-*] (11,5);
+\draw (8,0) -- (8,0);
+\draw (3,3) -- (3,3);
+\draw (3,2) to [D] (3,4);
+\draw (2,8) -- (3,8);
+\draw (2,10) -- (3,10);
+\draw (3,8) to [D] (3,10);
+\draw (2,2) -- (3,2);
+\draw (2,4) -- (3,4);
+\end{tikzpicture}
+\end{document}
