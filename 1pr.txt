@@ -1,0 +1,19 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{47 gth}
+\author{anton_yacenko }
+\date{November 2018}
+
+\begin{document}
+(47\2 mod2)=101111
+$$\frac{47}{2}=23$$
+$$\frac{23}{2}=11$$
+$$\frac{11}{2}=5$$
+$$\frac{5}{2}=2$$
+$$\frac{2}{2}=1$$
+\maketitle
+\section{Introduction}
+\end{document}
+
+
