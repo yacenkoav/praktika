@@ -26,10 +26,9 @@
 ({\x},{((\x)*(\x)*(\x))+((\x)*(\x))-(6*(\x))});
 \draw[domain=-1:1, help lines, smooth, red] plot
 ({\x},{-5*(\x)+1});
-\draw[domain=1.25:1.9, help lines, smooth, black] plot
-({\x},{6*(\x)-12.5});
-\draw[dashed] (2,0) -- (2,4);
-\draw[dashed] (1.56,0) -- (1.56,0.4);
+\draw[domain=-0.5:1, help lines, smooth, black] plot
+({\x},{-5.45*(\x)-0.06});
+\draw[dashed] (-1,0) -- (-1,6);
+\draw[dashed] (0.21,0) -- (0.21,-1.2);
 \end{tikzpicture}
 \end{document}
-
