@@ -1,0 +1,71 @@
+﻿ 
+\documentclass[russian,utf8,nocolumnxxxi,nocolumnxxxii]{eskdtext}
+\usepackage[T1,T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb,amsmath}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{rotating}
+\usepackage{graphicx}
+\graphicspath{{pictures/}}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+\usepackage{pgfplots}
+\usepackage{lipsum}
+\usepackage{nccmath}
+\usepackage{siunitx}
+\usepackage[european,cuteinductors,smartlabels]{circuitikz}
+\usepackage[backend=biber]{biblatex}
+
+\begin{document}
+
+ \section{Задача №2}
+{\bfЗадание:}\\
+Найти коэффициенты кубического сплайна, интерполирующего данные, представленные в векторах ${\bf Vx  Vy }$.\\
+
+Построить на одном графике: функцию ${\bf f(x)}$ и функцию ${\bf f1(x)}$, полученную после нахождения коэффициентов кубического сплайна.\\
+
+Представить графическое изображение результатов интерполяции исходных данных различными методами.\\
+\begin{tabular}[t]{|p{3em}|p{3em}|}
+\hline
+Vx&Vy\\
+\hline
+0 & 2.0\\
+1.25 & 1.925\\
+2.0 & 2.4\\
+2.625 & 2.7\\
+4.25 & 3.65\\
+\hline
+\end{tabular}
+\hfill \break
+\bigskip
+{\bf График 5 в приложении.}\\
+
+{\bf3.1)}Найдём коэффициенты канонического полинома определив матрицу  Вандермонда.\\
+$$i=0..4$$
+$$j=0..4$$
+$$ VI_{ji}=Vx{_j}^i $$
+$$XI_{j0}=1$$
+$$
+XI=
+\begin{bmatrix}
+1 & 0 & 0 & 0 & 0 \\
+1 & 1.25 & 1.562 & 1.953 & 2.441\\
+1 & 2.0 & 4.0 & 8.0 & 16.0\\
+1 & 2.625 & 6.890 & 18.087 & 47.480\\
+1 & 4.25 & 18.062 & 76.765 & 326.253\\
+
+\end{bmatrix}
+$$
+
+\hfill \break
+\bigskip
+{\bf3.2)}Вычислим коэффициенты полинома:\\
+$$a=XI^{-1}\cdot Vy$$
+$$a^T=[2\quad-22.337\quad95.45\quad245.726\quad1451]$$
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+\end{document}
